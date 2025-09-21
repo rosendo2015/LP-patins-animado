@@ -39,6 +39,7 @@ section.hero {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
+    text-transform: uppercase;
 
     & .button {
       display: flex;

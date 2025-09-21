@@ -29,9 +29,6 @@ html,
 button {
   font: 500 1rem/1.5 var(--ff-montserrat);
 }
-html {
-  zoom: 0.5;
-}
 
 h1,
 h2 {

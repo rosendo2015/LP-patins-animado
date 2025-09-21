@@ -27,6 +27,12 @@ section.gallery {
     position: relative;
     border-radius: 2.5rem;
     overflow: hidden;
+    animation: images-appear linear backwards;
+    animation-timeline: view();
+    animation-range: 100px 300px;
+    &[data-delay] {
+      animation-range: 150px 350px;
+    }
     & > img {
       height: 25rem;
       object-fit: cover;
@@ -73,5 +79,11 @@ section.gallery {
       object-fit: cover;
       border-radius: 50%;
     }
+  }
+}
+@keyframes images-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
   }
 }

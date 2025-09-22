@@ -87,3 +87,29 @@ section.gallery {
     transform: translateY(100%);
   }
 }
+@media (width <= 768px) {
+  section.gallery {
+    header {
+      span {
+        font-size: 0.75rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    .content {
+      grid-template-columns: 1fr;
+      grid-template-areas: "A" "B" "C" "D";
+      figure {
+        img {
+          height: 16rem;
+        }
+        figcaption {
+          img {
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
